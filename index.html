@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f6f3ef" />
+  <meta name="description" content="Beauty treatments and appointments at Lily Bethan Beauty in Leamington Spa. Discover nails, lashes and skin services." />
+  <title>Lily Bethan Beauty | Book an Appointment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="announcement">A LITTLE TIME FOR YOU <span aria-hidden="true">✦</span> BEAUTY IN LEAMINGTON SPA</div>
+  <header class="topbar wrap">
+    <a class="brand" href="#home" aria-label="Lily Bethan Beauty home">
+      <span class="brand-mark" id="brandMark"><span class="monogram">LB</span><svg viewBox="0 0 42 54" aria-hidden="true"><path d="M7 49C11 34 21 21 32 8"/><path d="M16 33C5 32 6 22 8 21c8 0 11 6 8 12ZM23 25c-3-11 5-17 9-18 2 8-1 15-9 18ZM12 42C1 41 2 34 3 31c9 1 12 6 9 11ZM29 17c-1-10 7-13 10-13 0 8-3 12-10 13Z"/></svg></span>
+      <span class="brand-name">LILY BETHAN <small>BEAUTY</small></span>
+    </a>
+    <nav><a class="navlink" href="#treatments">Treatments</a><a class="navlink" href="#about">About</a><a class="navbutton" href="#booking">Book an appointment <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="home">
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-line"></span> THE BEAUTY OF TAKING TIME FOR YOURSELF</div>
+        <h1>Your moment<br/>to <em>feel beautiful.</em></h1>
+        <p>Beautifully considered nails, lashes and skin treatments in Leamington Spa. A little time just for you.</p>
+        <div class="hero-actions"><a class="button primary" href="#booking">Book your appointment <span>↗</span></a><a class="button subtle" href="#treatments">Explore treatments <span>↓</span></a></div>
+        <div class="hero-tag"><span class="star">✳</span><span>NAILS <span class="separator">·</span> LASHES <span class="separator">·</span> SKIN</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Elegant abstract decorative composition"><div class="hero-arch"><span class="arch-text">A little<br/><em>me time.</em></span><svg viewBox="0 0 240 330" role="presentation"><g fill="none" stroke="#565448" stroke-width="1.9" stroke-linecap="round"><path d="M88 318C91 236 137 183 153 99"/><path d="M106 253c-35-23-53-49-60-77M119 209c31-15 52-39 62-67M137 156c-28-28-35-49-34-79M154 101c26-19 38-39 39-67"/></g><g fill="#767667" opacity=".82"><path d="M46 176c-29-12-41-32-36-55 26 4 44 22 36 55Z"/><path d="M62 206c-32-5-53-21-53-43 29-3 49 12 53 43Z"/><path d="M104 253c-35-13-46-34-44-55 30 5 47 23 44 55Z"/><path d="M119 209c6-36 23-52 46-53-1 27-17 45-46 53Z"/><path d="M137 156c-29-16-43-36-40-60 29 6 44 23 40 60Z"/><path d="M154 101c-1-35 12-58 35-64 7 28-4 50-35 64Z"/><path d="M178 151c-4-32 12-52 36-59 6 26-6 47-36 59Z"/></g></svg></div><div class="visual-seal">BEAUTY IS IN<br/>THE DETAILS <span>✳</span></div></div>
+    </section>
+    <section class="intro-strip"><div class="wrap intro-content"><p>CARE IN EVERY DETAIL</p><span>✧</span><p>YOUR TIME, YOUR TREATMENT</p><span>✧</span><p>FEEL GOOD, LOOK GOOD</p></div></section>
+    <section class="treatments-section wrap" id="treatments"><div class="section-head"><div><div class="eyebrow">OUR LITTLE MENU</div><h2>Find your <em>favourite.</em></h2></div><p>From fresh nails to lifted lashes and skin treatments, find what feels right for you.</p></div><div class="category-tabs" id="categoryTabs" role="group" aria-label="Filter treatments"></div><div class="service-grid" id="serviceGrid"></div></section>
+    <section class="booking-band" id="booking"><div class="wrap booking-layout"><div class="booking-intro"><div class="eyebrow light">MAKE A LITTLE TIME FOR YOU</div><h2>Let's get you<br/><em>booked in.</em></h2><p>Choose your treatment and preferred appointment date. We'll make the next step simple.</p><div class="booking-notes"><div><span>01</span> Pick your treatment</div><div><span>02</span> Choose your preferred time</div><div><span>03</span> Send your booking enquiry</div></div><p class="booking-disclaimer">This form sends an appointment <strong>request</strong>, not a confirmed booking. For live appointment availability, a booking-system link can be connected.</p></div><div class="booking-panel"><div class="panel-heading"><span class="panel-kicker">APPOINTMENT ENQUIRY</span><span class="mini-flower">✳</span></div><form id="bookingForm"><label for="treatment">Choose a treatment <span>*</span></label><select id="treatment" required><option value="">Select your treatment</option></select><div class="two-cols"><div><label for="date">Preferred date <span>*</span></label><input type="date" id="date" required /></div><div><label for="time">Preferred time <span>*</span></label><select id="time" required><option value="">Select a time</option></select></div></div><label for="clientName">Your name <span>*</span></label><input type="text" id="clientName" name="clientName" autocomplete="name" required placeholder="Full name" maxlength="90"/><label for="clientPhone">Phone number <span>*</span></label><input type="tel" id="clientPhone" name="clientPhone" autocomplete="tel" required placeholder="Your contact number" maxlength="35"/><label for="clientNotes">Anything else? <span class="optional">(optional)</span></label><textarea id="clientNotes" rows="3" maxlength="500" placeholder="Questions, preferences or anything we should know..."></textarea><label class="consent"><input type="checkbox" id="consent" required/><span>I understand this is a booking request and my appointment is only confirmed once I receive a reply.</span></label><button type="submit" class="button form-submit" id="submitButton">Prepare booking request <span>↗</span></button><p class="form-message" id="formMessage" aria-live="polite"></p></form><a id="liveBooking" class="live-booking hidden" target="_blank" rel="noopener noreferrer">Or book directly using live availability ↗</a></div></div></section>
+    <section class="about wrap" id="about"><div><div class="eyebrow">A LITTLE ABOUT US</div><h2>Beauty, thoughtfully <em>done.</em></h2><p>Feel welcome, take a moment for yourself and enjoy a beauty experience designed around you. Explore the treatments above and get in touch to arrange an appointment.</p><a id="instagramLink" class="inline-link hidden" target="_blank" rel="noopener noreferrer">Find us on Instagram ↗</a></div><div class="about-card"><div class="about-card-art">✳</div><div class="eyebrow">FIND US</div><h3 id="locationText">Leamington Spa</h3><p id="addressText">Appointments by arrangement</p><div class="about-small">NAILS &nbsp; • &nbsp; LASHES &nbsp; • &nbsp; SKIN</div></div></section>
+  </main>
+  <footer><div class="wrap footer-inner"><div><strong>LILY BETHAN BEAUTY</strong><p>Little moments, beautifully yours.</p></div><div><a href="#treatments">Treatments</a><a href="#booking">Book</a><a id="footerInstagram" class="hidden" target="_blank" rel="noopener noreferrer">Instagram</a></div></div><div class="wrap footer-bottom"><span>© <span id="year"></span> Lily Bethan Beauty</span><span id="policyText"></span></div></footer>
+  <dialog id="requestDialog"><div class="dialog-content"><button class="close-dialog" id="closeDialog" aria-label="Close">×</button><span class="dialog-icon">✳</span><h2>Your request is ready</h2><p id="dialogExplanation">Choose how to send your request. Your appointment is not confirmed until you receive a reply.</p><div id="sendActions" class="send-actions"></div><button class="copy-button" id="copyRequest" type="button">Copy enquiry text</button><p class="fineprint">Please don't send sensitive medical information in an open message. Your enquiry details are not stored by this website.</p></div></dialog>
+</body>
+</html>
